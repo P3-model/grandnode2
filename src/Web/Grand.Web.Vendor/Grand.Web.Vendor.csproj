@@ -20,4 +20,7 @@
         <ProjectReference Include="..\Grand.SharedUIResources\Grand.SharedUIResources.csproj" />
         <ProjectReference Include="..\Grand.Web.Common\Grand.Web.Common.csproj" />
     </ItemGroup>
+    <ItemGroup>
+      <PackageReference Include="P3Model.Annotations" Version="0.4.0" />
+    </ItemGroup>
 </Project>

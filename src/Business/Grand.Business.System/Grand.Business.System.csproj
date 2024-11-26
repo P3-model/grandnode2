@@ -6,4 +6,7 @@
     <ProjectReference Include="..\..\Core\Grand.SharedKernel\Grand.SharedKernel.csproj" />
     <ProjectReference Include="..\Grand.Business.Core\Grand.Business.Core.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="P3Model.Annotations" Version="0.4.0" />
+  </ItemGroup>
 </Project>

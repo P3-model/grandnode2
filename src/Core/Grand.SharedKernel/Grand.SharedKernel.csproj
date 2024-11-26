@@ -1,3 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <Import Project="..\..\Build\Grand.Common.props" />
+  <ItemGroup>
+    <PackageReference Include="P3Model.Annotations" Version="0.4.0" />
+  </ItemGroup>
 </Project>

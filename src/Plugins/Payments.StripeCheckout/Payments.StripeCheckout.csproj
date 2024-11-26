@@ -15,6 +15,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="P3Model.Annotations" Version="0.4.0" />
         <PackageReference Include="Stripe.net" Version="46.2.1" />
     </ItemGroup>
 

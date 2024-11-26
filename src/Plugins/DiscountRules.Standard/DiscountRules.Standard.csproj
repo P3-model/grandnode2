@@ -40,5 +40,8 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>   
   </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="P3Model.Annotations" Version="0.4.0" />
+  </ItemGroup>
 
 </Project>
