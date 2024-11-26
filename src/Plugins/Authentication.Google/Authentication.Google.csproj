@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="8.0.10" />
+    <PackageReference Include="P3Model.Annotations" Version="0.4.0" />
   </ItemGroup>
 
   <Target Name="CopyFile" AfterTargets="AfterBuild">
