@@ -134,7 +134,7 @@ public class ProductDetailsModel : BaseEntityModel
 
         //updating existing shopping cart or wishlist item?
         public string UpdatedShoppingCartItemId { get; set; }
-        public ShoppingCartType? UpdateShoppingCartItemType { get; set; }
+        public ShoppingCartType UpdateShoppingCartItemType { get; set; }
     }
 
     public class ProductPriceModel : BaseModel

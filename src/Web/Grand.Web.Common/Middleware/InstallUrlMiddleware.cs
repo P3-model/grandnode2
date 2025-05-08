@@ -71,14 +71,14 @@ public class InstallUrlMiddleware
         //call the next middleware in the request pipeline
         await _next(context);
     }
-    private Task<GrandNodeVersion?> GetDatabaseVersion(HttpContext context, bool databaseIsInstalled)
+    private Task<GrandNodeVersion> GetDatabaseVersion(HttpContext context, bool databaseIsInstalled)
     {
         return _cacheBase.GetAsync(CacheKey.GRAND_NODE_VERSION, () =>
         {
             if (databaseIsInstalled) 
                 return Task.FromResult(context.RequestServices.GetRequiredService<IRepository<GrandNodeVersion>>().Table.FirstOrDefault());
 
-            return Task.FromResult<GrandNodeVersion?>(null);
+            return Task.FromResult<GrandNodeVersion>(null);
 
         }, int.MaxValue);
     }
