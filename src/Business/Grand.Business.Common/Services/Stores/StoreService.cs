@@ -126,7 +126,7 @@ public class StoreService : IStoreService
     /// </summary>
     /// <param name="host"></param>
     /// <returns></returns>
-    public async Task<Store> GetStoreByHost(string host)
+    public async Task<Store?> GetStoreByHost(string host)
     {
         var allStores = await GetAllStores();
         return allStores.FirstOrDefault(s => s.ContainsHostValue(host));

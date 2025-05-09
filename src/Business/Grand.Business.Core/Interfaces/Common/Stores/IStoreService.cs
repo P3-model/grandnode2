@@ -45,5 +45,5 @@ public interface IStoreService
     /// </summary>
     /// <param name="host"></param>
     /// <returns></returns>
-    Task<Store> GetStoreByHost(string host);
+    Task<Store?> GetStoreByHost(string host);
 }
